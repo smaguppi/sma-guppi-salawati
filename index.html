@@ -4,83 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- SEO -->
-  <title>SMA GUPPI Salawati - Website Resmi</title>
-  <meta name="description" content="Website resmi SMA GUPPI Salawati. Menyediakan informasi sekolah, kegiatan, pengumuman, dan data akademik terbaru.">
-  <meta name="keywords" content="SMA GUPPI, sekolah Papua Barat Daya, pendidikan, Salawati">
+  <title>SMA GUPPI Salawati</title>
+
+  <meta name="description" content="Website resmi SMA GUPPI Salawati">
   <meta name="robots" content="index, follow">
 
-  <!-- Google Verification -->
-  <meta name="google-site-verification" content="jx4BDYzJrQk-c-E4FhVX7ayXz3RSwypxEFEVOe9tiqI" />
-
-  <!-- Icon -->
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/98/" />
-
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
 
     header {
-      text-align: center;
-      padding: 15px;
       background: #0d47a1;
       color: white;
+      text-align: center;
+      padding: 12px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 20px;
+      font-size: 18px;
     }
 
-    header p {
-      margin: 5px 0 0;
-      font-size: 14px;
+    /* Container utama */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
-    .iframe-container {
-      width: 100%;
-      height: calc(100dvh - 80px);
-    }
-
+    /* Iframe */
     iframe {
+      flex: 1;
       width: 100%;
-      height: 100%;
       border: none;
     }
 
-    /* SEO hidden content */
-    .seo-content {
-      display: none;
+    /* RESPONSIVE MOBILE */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Konten yang dibaca Google -->
   <header>
     <h1>SMA GUPPI SALAWATI</h1>
-    <p>Website Resmi - Satu Hati Maju Terus</p>
   </header>
 
-  <!-- Konten tambahan untuk SEO -->
-  <div class="seo-content">
-    <h2>Informasi SMA GUPPI Salawati</h2>
-    <p>SMA GUPPI Salawati adalah sekolah yang berlokasi di Kabupaten Sorong, Provinsi Papua Barat Daya. Website ini menyediakan informasi kegiatan sekolah, pengumuman, data siswa, dan layanan digital sekolah.</p>
-  </div>
-
-  <!-- Aplikasi utama -->
-  <div class="iframe-container">
+  <div class="container">
     <iframe
       src="https://script.google.com/macros/s/AKfycbw8bC-ZfY_osjuScPMeYGk3w_EhF0j1f26VthVlZKO7Wk9Lzb1Sin19lL-qEYLCWGRC/exec"
-      allowfullscreen
-      allow="fullscreen; camera; microphone; display-capture; geolocation;">
+      allow="fullscreen; camera; microphone; geolocation">
     </iframe>
   </div>
 
