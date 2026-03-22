@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JUDUL ARTIKEL - SMA GUPPI SALAWATI</title>
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: #f4f7f6; color: #333; }
+    header { background: #0d47a1; color: white; text-align: center; padding: 15px; }
+    header h1 { font-size: 18px; }
+    .container { max-width: 800px; margin: 20px auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .back-btn { display: inline-block; margin-bottom: 20px; color: #0d47a1; text-decoration: none; font-weight: bold; font-size: 14px; padding: 8px 15px; border: 1px solid #0d47a1; border-radius: 5px; }
+    .back-btn:hover { background: #0d47a1; color: white; }
+    .judul-artikel { font-size: 24px; color: #0d47a1; margin-bottom: 10px; }
+    .info-artikel { font-size: 13px; color: #777; font-style: italic; margin-bottom: 20px; display: block; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+    
+    .media-photo { width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .media-video { width: 100%; height: 350px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: none; }
+    @media (max-width: 600px) { .media-video { height: 200px; } }
+    .isi-artikel p { font-size: 15px; line-height: 1.8; margin-bottom: 15px; text-align: justify; text-indent: 30px; }
+    
+    /* Gunakan class ini jika tidak ingin menampilkan gambar/video */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <header><h1>SMA GUPPI SALAWATI</h1></header>
+
+  <div class="container">
+    <a href="index.html" class="back-btn">&larr; Kembali ke Beranda</a>
+
+    <h2 class="judul-artikel">TULIS JUDUL ARTIKEL DI SINI</h2>
+    <span class="info-artikel">📅 TANGGAL | ✍️ Oleh: PENULIS</span>
+
+    <img src="LINK_FOTO_KAMU_DISINI.jpg" class="media-photo">
+
+    <iframe class="media-video hidden" src="LINK_VIDEO_YOUTUBE_DISINI" allowfullscreen></iframe>
+
+    <div class="isi-artikel">
+      <p>Tulis paragraf pertama di sini...</p>
+      <p>Tulis paragraf kedua di sini...</p>
+      <p>Tulis paragraf ketiga di sini...</p>
+    </div>
+  </div>
+
+</body>
+</html>
