@@ -1,2 +1,1 @@
 #sma-guppi-salawati/
-Web
