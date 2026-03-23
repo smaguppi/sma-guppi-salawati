@@ -10,6 +10,9 @@
   <meta name="description" content="Website resmi SMA GUPPI SALAWATI di Papua Barat.">
   <link rel="canonical" href="https://smaguppi.github.io/sma-guppi-salawati/">
 
+  <link rel="preconnect" href="https://script.google.com" crossorigin>
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
   <meta property="og:site_name" content="SMA GUPPI Salawati">
   <meta property="og:title" content="SMA GUPPI SALAWATI - Website Resmi">
   <script type="application/ld+json">
@@ -21,7 +24,10 @@
       "url" : "https://smaguppi.github.io/sma-guppi-salawati/"
     }
   </script>
+  
   <style>
+    /* ✅ JURUS 2: SCROLL BEHAVIOR & HARDWARE ACCELERATION */
+    html { scroll-behavior: smooth; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
     header { background: #0d47a1; color: white; text-align: center; padding: 10px; }
@@ -31,7 +37,7 @@
     .spinner { border: 4px solid #ccc; border-top: 4px solid #0d47a1; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-right: 10px; }
     @keyframes spin { 100% { transform: rotate(360deg); } }
     
-    iframe { flex: 1; width: 100%; border: none; display: none; }
+    iframe { flex: 1; width: 100%; border: none; display: none; -webkit-overflow-scrolling: touch; }
 
     /* Tombol Melayang */
     .btn-container { position: fixed; bottom: 20px; z-index: 1000; }
@@ -39,8 +45,15 @@
     .btn-right { right: 20px; }
     .btn-left { left: 20px; }
 
-    /* Panel Full Screen */
-    .fullscreen-panel { position: fixed; top: 100%; left: 0; width: 100%; height: 100%; background-color: #f4f7f6; z-index: 2000; overflow-y: auto; transition: top 0.5s ease-in-out; padding: 20px; padding-top: 70px; }
+    /* Panel Full Screen yang Dioptimalkan */
+    .fullscreen-panel { 
+      position: fixed; top: 100%; left: 0; width: 100%; height: 100%; 
+      background-color: #f4f7f6; z-index: 2000; overflow-y: auto; 
+      transition: top 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Animasi lebih cepat dan natural */
+      padding: 20px; padding-top: 70px; 
+      -webkit-overflow-scrolling: touch; /* Bikin scroll di HP iOS/Android licin */
+      will-change: top; /* Memaksa HP pakai GPU untuk render animasi ini */
+    }
     .fullscreen-panel.show { top: 0; }
     .close-x { position: absolute; top: 15px; right: 20px; font-size: 35px; color: #333; cursor: pointer; font-weight: bold; z-index: 2010; line-height: 1; background: white; width: 40px; height: 40px; border-radius: 50%; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
     
@@ -93,7 +106,7 @@
       <div class="artikel-card">
         <h3 class="artikel-judul">Penerimaan Siswa Baru Tahun 2026</h3>
         <span class="artikel-tanggal">📅 20 Maret 2026 | ✍️ Oleh: Admin</span>
-        <img src="https://raw.githubusercontent.com/smaguppi/sma-guppi-salawati/main/75844.png" class="media-photo">
+        <img src="https://raw.githubusercontent.com/smaguppi/sma-guppi-salawati/main/75844.png" class="media-photo" loading="lazy" decoding="async">
         <div class="artikel-isi">
           <p>SMA GUPPI Salawati resmi membuka Pendaftaran Peserta Didik Baru (PPDB) untuk tahun ajaran baru. Pendaftaran dapat dilakukan langsung di sekretariat sekolah...</p>
         </div>
@@ -118,12 +131,20 @@
         <a href="sma-guppi-berbagi.html" class="read-more-btn">Baca Selengkapnya &rarr;</a>
       </div>
 
-    </div> </div> <script>
+    </div>
+  </div>
+
+  <script>
     const iframe = document.getElementById("mainFrame"), loading = document.getElementById("loading");
     const btnSejarah = document.getElementById("btnSejarah"), panelSejarah = document.getElementById("panelSejarah"), closeSejarahX = document.getElementById("closeSejarahX");
     const btnArtikel = document.getElementById("btnArtikel"), panelArtikel = document.getElementById("panelArtikel"), closeArtikelX = document.getElementById("closeArtikelX");
 
-    iframe.onload = function () { iframe.style.display = "block"; loading.style.display = "none"; btnSejarah.classList.remove("hidden"); btnArtikel.classList.remove("hidden"); };
+    iframe.onload = function () { 
+      iframe.style.display = "block"; 
+      loading.style.display = "none"; 
+      btnSejarah.classList.remove("hidden"); 
+      btnArtikel.classList.remove("hidden"); 
+    };
     
     btnSejarah.addEventListener("click", () => panelSejarah.classList.add("show"));
     closeSejarahX.addEventListener("click", () => panelSejarah.classList.remove("show"));
