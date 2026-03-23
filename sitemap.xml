@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Halaman Utama -->
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- ========== HALAMAN ARTIKEL ========== -->
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/article1-ppdb.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/article1-pramuka.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/sma-guppi-berbagi.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- ========== HALAMAN NAVIGASI UTAMA (Single Page) ========== -->
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#beranda</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#visi_misi</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#sambutan</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#akreditasi</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#guruStaff</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#struktur</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#kurikulum</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#jadwal</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#gallery</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#download</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#kontak</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#news</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#event</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smaguppi.github.io/sma-guppi-salawati/#admisi</loc>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>
